@@ -1,3 +1,115 @@
-body{
-background: red;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--primary-accent-color);
+}
+
+* {
+    color: white;
+}
+
+
+/* CSS variables */
+
+:root {
+    --primary-text-color: #f1f1f1;
+    --secondary-text-color: #3ea6ff;
+    --content-text-color: #AAAAAA;
+    --icons-color: #f1f1f1;
+    --primary-accent-color: #0F0F0F;
+    /* --secondary-accent-color: */
+    --search-bar-color: #121212;
+    --input-search-text-color:#757575;
+    --search-bar-border-color: #303030;
+    --button-color: #222222;
+    --nav2-button-color: #272727;
+    --button-hover-color: #3D3D3D;
+    --hamburger-hover-color: #272727;
+
+
+}
+
+/* Utility classes  */
+
+.flex {
+    display: flex;
+    align-items: center
+}
+
+.round-container:hover {
+    border-radius: 50%;
+    background: var(--hamburger-hover-color);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Header nav1  */
+
+nav {
+    /* justify-content: space-evenly; */
+    height: 56px;
+    padding: 0 16px;
+}
+
+
+/* nav1 left side  */
+
+/* Hamburger */
+
+.hamburger {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+.hamburger i{
+    font-size: 1.4rem;
+    color: var(--icons-color);
+}
+
+
+/* Logo  */
+
+.logo-container {
+height: 56px;
+width: 123px;
+    padding: 18px 14px 18px 16px;
+   
+}
+
+.logo-container img {
+    height: 20px;
+    width: 93px;
+}
+
+.logo-container p{
+    padding-bottom: 14px;
+    font-size: 10px;
+    color: var(--content-text-color);
+}
+
+/* nav1 center part  */
+/* search bar  */
+.search-bar-container {
+    margin-left: 40px;
+    padding: 0 4px;
+}
+.search-bar{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
 }
