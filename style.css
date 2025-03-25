@@ -34,6 +34,7 @@ body {
     --nav2-button-color: #272727;
     --icon-light-hover-color: #3D3D3D;
     --icon-dark-hover-color: #272727;
+    --aside-icon-hover-color: #272727;
 
 
 }
@@ -70,8 +71,14 @@ nav {
     height: 56px;
     padding: 0 16px;
     justify-content: space-between;
+    
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-accent-color);
+}
 
 /* nav1 left side  */
 /* Hamburger */
@@ -296,4 +303,43 @@ form {
     border-radius: 50%;
     background-image: url("Image&icons/meicon.png");
     background-size: cover;
+}
+
+/* aside section  */
+
+aside {
+    height: 100vh;
+    width: 64px;
+    background-color: var(--primary-accent-color);
+    position: fixed;
+    top: 56px;
+    padding: 0 4px;
+}
+
+
+aside .item .text {
+    font-size: 10px;
+    color: var(--primary-text-color);
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+aside .item {
+    padding: 16px 0 14px 0;
+    width: 64px;
+    height: 74px;
+}
+
+aside .item:hover {
+    background-color: var(--aside-icon-hover-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.08s;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
