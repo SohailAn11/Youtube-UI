@@ -10,7 +10,8 @@ html {
 }
 
 body {
-    background: var(--primary-accent-color);
+    /* background: var(--primary-accent-color); */
+    background-color: red;
 }
 
 * {
@@ -67,17 +68,19 @@ body {
 
 /* Header nav1  */
 
-nav {
+.nav {
     height: 56px;
     padding: 0 16px;
     justify-content: space-between;
-    
+
 }
 
-header {
+.header {
     position: sticky;
     top: 0;
     background-color: var(--primary-accent-color);
+    z-index: 999;
+    /* height: ; */
 }
 
 /* nav1 left side  */
@@ -307,30 +310,35 @@ form {
 
 /* aside section  */
 
-aside {
+.aside {
     height: 100vh;
-    width: 64px;
+    /* width: 74px; */
     background-color: var(--primary-accent-color);
     position: fixed;
     top: 56px;
     padding: 0 4px;
+    z-index: 999;
+}
+.section1 {
+    background-color: var(--primary-accent-color);
+
 }
 
-
-aside .item .text {
+.aside .item .text {
     font-size: 10px;
     color: var(--primary-text-color);
     margin-top: 6px;
     font-weight: 400;
 }
 
-aside .item {
+.aside .item {
     padding: 16px 0 14px 0;
     width: 64px;
     height: 74px;
+    
 }
 
-aside .item:hover {
+.aside .item:hover {
     background-color: var(--aside-icon-hover-color);
     border-radius: 10px;
     cursor: pointer;
@@ -343,3 +351,176 @@ aside .item:hover {
     justify-content: center;
     align-items: center;
 }
+
+/* Header Nav2  */
+/* scroll container  */
+
+.nav2 {
+    height: 56px;
+    background: var(--primary-accent-color);
+    /* position: sticky; */
+    /* top: 56px;./ */
+    /* left: 72px; */
+    justify-content: flex-end;
+    /* width: 1469px; */
+
+    /* z-index: 99; */
+    
+}
+
+.scroll-contents {
+    /* display: inline-block; */
+    /* width: 1449px; */
+    /* width: 100%; */
+    /* justify-content: flex-end; */
+    
+}
+
+.scroll-contents {
+  
+}
+
+.right-icon {
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    background-color: var(--primary-accent-color);
+    /* display: inline-block; */
+    
+ 
+}
+
+/* .right-icon::after  */
+
+.right-icon i {
+font-size: 1rem;
+}
+
+.icon-arrow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    justify-content: center;    
+}
+
+.icon-arrow:hover {
+    background-color: var(--aside-icon-hover-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.08s;
+}
+
+.scroll-container {
+    padding: 0 34px;
+    height: 56px;
+    /* gap: 0; */
+    width: 1419px;
+    /* width: 100%; */
+    /* width: calc(1536px - 64px); */
+    /* overflow: scroll; */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.chips-content {
+    margin: 12px 12px 12px 0;
+    display: inline-block;
+    border-radius: 8px;
+    
+}
+
+
+
+.chips {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.chips-content:nth-child(1) {
+    background-color: #f1f1f1;
+}
+.chips-content:nth-child(1):hover {
+    background-color: #f1f1f1;
+}
+
+.chips-content:nth-child(1) .chips {
+    color: var(--primary-accent-color);
+
+}
+
+.chips-content {
+    background-color: #272727;
+    cursor: pointer;
+}
+
+.chips-content:hover {
+    background: var(--icon-light-hover-color);
+    transition: all 0.15s cubic-bezier(.05,0,0,1);
+
+    /* transition-duration: .15s; */
+    /* transition-timing-function: cubic-bezier(.05,0,0,1); */
+    will-change: transform;
+    /* white-space: nowrap; */
+
+}
+
+
+/* Main section  */
+/* main  */
+
+section {
+    /* position: absolute; */
+    /* padding-top: 24px;
+    padding-left:  */
+    margin-left: 72px;
+    /* position: absolute; */
+}
+
+
+
+ /* main section  */
+section {
+}
+
+.contents {
+padding-top: 24px;
+
+
+}
+
+.items {
+    width: 25%;
+    margin: 0 8px 32px 8px;
+    
+}
+
+.details {
+    top: 7px;
+    justify-content: space-between;
+}
+
+.details .image {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+
+.details a,p {
+    font-size: 13px;
+    text-decoration: none;
+    
+}
+
