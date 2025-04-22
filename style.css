@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -526,7 +527,7 @@ section {
 
 
 .items {
-    width:456px;
+    width: 456px;
     /* height: 256px; */
     /* width: 25%; */
     /* height: 12%; */
@@ -552,12 +553,13 @@ section {
 }
 
 .vthum2 {
-   width: 456px;
+    width: 456px;
     /* width:100%; */
     height: 256px;
     background-image: url("Image&icons/VThumbnail2.jpg");
     background-size: cover;
 }
+
 .vthum3 {
     width: 456px;
     /* width:100%; */
@@ -566,6 +568,7 @@ section {
     background-size: cover;
     background-position: center;
 }
+
 .vthum4 {
     width: 456px;
 
@@ -574,16 +577,19 @@ section {
     background-size: cover;
     /* background-position:center; */
 }
-.vthum5 {
-   /* width: 456px; */
-   width: 456px;
 
-    height: 256px;/* width: 456px; */
+.vthum5 {
+    /* width: 456px; */
+    width: 456px;
+
+    height: 256px;
+    /* width: 456px; */
     background-image: url("Image&icons/VThumbnail4.jpg");
     background-size: 120%;
     background-position: center;
 
 }
+
 .vthum6 {
     width: 456px;
     /* width:100%; */
@@ -591,6 +597,7 @@ section {
     background-image: url("Image&icons/VThumbnail2.jpg");
     background-size: cover;
 }
+
 .vthum7 {
     width: 456px;
 
@@ -601,6 +608,7 @@ section {
     background-position: center;
 
 }
+
 .vthum8 {
     width: 456px;
 
@@ -611,6 +619,7 @@ section {
     background-position: center;
 
 }
+
 .vthum9 {
     width: 456px;
 
@@ -697,11 +706,13 @@ section {
 
 .S-Contents {
     padding-top: 12px;
-    margin: 0  0 0 34px;
+    margin: 0 0 48px 34px;
     /* width: 1438px; */
     flex-wrap: nowrap;
-        overflow-x: auto;
-        white-space: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+
+
 }
 
 .S-Contents::-webkit-scrollbar {
