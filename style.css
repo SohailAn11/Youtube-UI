@@ -625,16 +625,16 @@ section {
 
 .S-Contents .S-items {
     /* flex-wrap: wrap; */
-    /* width: 323px; */
-    width: 40%;
-    /* height: 100px; */
+    width: 304px;
+    /* width: 40%; */
+    height: 535px;
 }
 
-.S-Contents a img {
-    /* flex-wrap: wrap; */
-    width: 100%;
-    /* height: 345px; */
 
+
+.S-Contents .S-items img {
+    width: 304px;
+    height: 456px;
 }
 
 
