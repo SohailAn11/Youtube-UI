@@ -543,13 +543,14 @@ section {
     /* width: 25%; */
 }
 
-.items img {
+.item img {
 
     width: 100%;
+    border-radius:12px;
+
 }
 
 .items div a {
-    border-radius: 12px;
 }
 
 
@@ -568,7 +569,7 @@ section {
     margin-right: 10px;
 
 
-    align-self: self-start;
+    align-self:flex-start;
 
 }
 
@@ -615,6 +616,11 @@ section {
 
 }
 
+.S-logo p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
 .shorts p {
     font-size: 20px;
     font-weight: 600;
@@ -625,7 +631,7 @@ section {
 
 .S-Contents .S-items {
     /* flex-wrap: wrap; */
-    width: 304px;
+    width: 280px;
     /* width: 40%; */
     height: 535px;
 }
@@ -633,8 +639,9 @@ section {
 
 
 .S-Contents .S-items img {
-    width: 304px;
+    width: 280px;
     height: 456px;
+    border-radius: 8px;
 }
 
 
