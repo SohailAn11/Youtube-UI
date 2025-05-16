@@ -1473,7 +1473,7 @@
     }
 
     .contents {
-        margin-inline: 16px;
+        /* margin-inline: 16px; */
     }
 
     .S-Contents {
@@ -1494,6 +1494,10 @@
         background-size: cover;
     }
 
+    .details {
+        width: 90%;
+        justify-self: center;
+    }
 
     .details .info a {
         color: var(--primary-text-color);
